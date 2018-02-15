@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>G's Songs</title>
+        <meta name="description" content="guitar tabs for Grace">
+        <link rel="stylesheet" href="style.css">
+        
+        <style>    
+            h1 {font-family:fantasy;}
+            
+            nav {background-color: skyblue; position: fixed; top: 0px; left: 0px;}
+            
+            
+            
+            .panel {position: fixed; top: 0px; left: 0px; 
+                list-style-type:none; margin:0; padding:0; display: block; width:60px;
+                background-color: deepskyblue; width:150px;}
+            .search {width:90%; font-size:22px; background-color: #e5e5e5; padding:6px 10px 7px; border:0;}
+        </style>
+    </head>
+    
+    
+    
+    
+    <header>
+        
+        <h1>Songs</h1>
+        
+        <form action="/actionpage.php" method="get" id="songsearch">
+           <input type="text" name="songname" placeholder="Search over 500,000 tabs"><br>
+        </form> 
+
+        <button type="submit" form="songsearch" value="Submit">Submit</button>
+        
+        
+    </header>
+
+    <div class="ad">
+        <img src="Screen%20Shot%202018-02-14%20at%207.23.15%20PM.png">
+        <!-- This should also be a link to the ad -->
+    </div>
+    
+    
+    <main>
+        <!-- Includes list of other songs to select
+
+             When hovering over them, turn dark grey     
+        -->
+    </main>
+    
+    
+    <nav class="sidebar">
+        <img src="Screen%20Shot%202018-02-14%20at%207.32.53%20PM.png" href="#home">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.01%20PM.png" href="#search">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.06%20PM.png" href="#favs">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.11%20PM.png" href="#submit">
+    </nav>
+    
+    <div class="panel">
+        <img src="Screen%20Shot%202018-02-14%20at%207.32.53%20PM.png" href="#home">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.01%20PM.png" href="#search">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.06%20PM.png" href="#favs">
+        <img src="Screen%20Shot%202018-02-14%20at%207.33.11%20PM.png" href="#submit">
+        
+        
+        <header class="panel_header">
+            <h2 class="panel_title">Search</h2>
+        
+             <div class="search">
+                
+                <form action="/actionpage.php" method="get" id="songsearch">
+                <input type="text" name="songname" placeholder="Search over 500,000 tabs"><br>
+                </form> 
+
+                <button type="submit" form="songsearch" value="Submit">Submit</button>
+
+            </div>
+            
+            
+        </header>
+        
+        
+        
+        
+    </div>
+    
+    
+    
+    <div class="songchart">
+        <!-- Put the songchart in the background
+        
+             Keep an ad scrolling at the bottom?
+        -->
+        <img src="Screen%20Shot%202018-02-14%20at%207.30.44%20PM.png">
+        
+        
+        
+        
+        
+    </div>
+    
+    
+    </html>
+    
+    
+       <!--
+
+Semantic HTML reference from w3schools
+These are the new HTML5 elements that impart meaning as opposed to <div> and <span> which are semantically meaningless:
+<article> An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+<aside> The aside content should be related to the surrounding content.
+<details> Defines additional details that the user can view or hide
+<figcaption> To add a visual explanation to an image
+<figure> In HTML5, an image and a caption can be grouped together in a <figure> element:
+<footer> Should contain information about its containing element
+<header> Should be used as a container for introductory content. There can be more that one.
+ Not to be confused with <head> or headers such as <h1>
+<main> Specifies the main content of a document
+<mark> Defines marked or highlighted text
+<nav> The <nav> element defines a set of navigation links. NOT all links of a document should be inside a <nav> element.
+ The <nav> element is intended only for the most significant navigation links on a page.
+<section> A thematic grouping of content, typically with a heading.
+<summary> Defines a visible heading for a <details> element
+<time> Defines a date/time
+
+-->
+    
