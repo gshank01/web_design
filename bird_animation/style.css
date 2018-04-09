@@ -1,0 +1,72 @@
+body {
+    background-color: lightblue;
+    
+}
+
+.clouds {
+    
+}
+
+.clouds:hover {
+    animation-name: uncover;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+}
+
+.sun {
+    position:fixed;
+    top: 130px;
+    left:120px;
+    margin: 60px auto;
+    padding:50px; /*determines size */
+    border-radius: 50px;
+    background-color: lightgoldenrodyellow;
+    
+    z-index: -1; /*pop it behind the cloud*/
+}
+
+.goose {
+    width: 300px;
+    height: 255px;
+    background-image: url("goose_down.png");
+    transition: background .5s, transform 1s;
+    animation-name: fly;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction:alternate; /* This looks wrong, but I wanted the goose to go back and forth  */
+}
+
+/*
+.testgoose {
+    width: 480px;
+    height:265px;
+    background-image: url("goose_up.png");
+}
+*/
+
+.goose:hover{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image: url("parrot.png");
+}
+
+@keyframes fly{
+    from{transform: translateX(0)}
+    to{transform: translateX(500px)}
+}
+
+@keyframes uncover{
+    from{transform: translateX(0)}
+    to{transform: translateX(50px)}
+}
+
+.poem{
+    position:relative;
+    text-align:center;
+    margin: 30px;
+    padding: 30px;
+    border-style:inset;
+    font-family: fantasy;
+}
+
