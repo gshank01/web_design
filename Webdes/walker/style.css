@@ -1,0 +1,35 @@
+body{
+    background-color:lightpink
+}
+
+#sprite{
+    background-image: url(hd_kirby_sprite_sheet_by_sonicjeremy-da2v323.png);
+    width: 100px;
+    height: 150px;
+    
+    animation: walk 1s steps(10) infinite,
+        forward 5s linear infinite;
+}
+
+@keyframes walk{
+    0%{
+        background-position: 0px;
+    }
+    
+    
+    100%{
+        background-position: 600px;
+    }
+}
+
+@keyframes forward{
+    0%{ transform:translateX(-100px);} /*offscreen */
+    
+    100%{
+        transform:translateX(1200px); /*to make sure it covers whole screen */
+    }
+}
+
+#ground{
+    border-bottom: dotted;
+}
