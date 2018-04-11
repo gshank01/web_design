@@ -1,5 +1,5 @@
 h1{
-    background-color: lightpink;
+    /*background-color: lightpink; This does not work w ladybugs */
     font-family: fantasy;
     color:blueviolet;
     padding: 0px;
@@ -13,18 +13,49 @@ body{
 
 img {
     border-style:inset;
-    position: relative;
+    display:grid;
+    margin: 20px;
 }
 
-h4{
+h3{
     background-color:beige;
     font-family: monospace;
     color: darkred;
     border-style: groove;
     border-color:darkorchid;
+    padding: 10px;
+    margin: 0px;
     
 }
 
 a{
     margin: 20px;
 }
+
+.info{
+    margin:5%;
+    font-family: monospace;
+    font-size: 16px;
+    border-style:inset;
+}
+
+#lady{
+    background-image:url("/my_page/images/ladybug_picnic.png");
+    height:20px; /* To show only one bug at a time */
+    width: 30px;
+    display:inline-block;
+    
+    animation-name: walk;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    
+    
+}
+
+p{
+    padding: 10px;
+    margin: 0px;
+}
+
+
+
