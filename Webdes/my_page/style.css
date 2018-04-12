@@ -1,9 +1,10 @@
-h1{
-    /*background-color: lightpink; This does not work w ladybugs */
+#myname{
+    background-color: lightpink;
     font-family: fantasy;
     color:blueviolet;
-    padding: 0px;
-    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 3px;
 }
 
 body{
@@ -13,16 +14,16 @@ body{
 
 img {
     border-style:inset;
-    display:grid;
     margin: 20px;
+    
 }
 
-h3{
+#navbar{
     background-color:beige;
     font-family: monospace;
     color: darkred;
     border-style: groove;
-    border-color:darkorchid;
+    border-color:cornflowerblue;
     padding: 10px;
     margin: 0px;
     
@@ -57,5 +58,61 @@ p{
     margin: 0px;
 }
 
+#bitmoji{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    border:none;
+}
+
+.wrapper {
+    display:flex;
+    flex-flow:row wrap;
+    text-align:center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+#main{
+    text-align:left;
+    font-size: 25px;
+    font-family:serif;
+    background-color: cornflowerblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    border-style: groove;
+    padding: 3%;
+    padding-top: 5%;
+    margin-top: 1%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#poemframe{ /*make this an onclick change  */
+    padding:3%;
+    border-style:groove;
+    height:80vh;
+    background-color: azure;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#potteryframe{
+    padding:3%;
+    width:90vw;
+}
+
+
+
+@media all and (max-width:800px){
+    /*Make changes to the css */
+}
+
+@media all and (max-width:600px){
+    /*Make more changes*/
+}
 
 

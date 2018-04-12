@@ -7,9 +7,11 @@
 
 </head>
 
+
+<!--This can be made to bring the iframe from behind the scene to the front when a poem is selected -->
 <body>
-<a href="/my_page/index.html"><h1 id="lady"> Grace Shank</h1></a>
-<h3><a style="text-decoration:overline;">Poems</a><a href="/my_page/short_stories/stories.html">Short Stories</a><a href="/my_page/shoes/shoes.html">Shoes</a><a href="/my_page/ceramics/index.html">Ceramics</a></h3>
+<a href="/my_page/index.html"><h1 id="myname"> Grace Shank</h1></a><div id="lady"></div>
+<h3 id="navbar"><a style="text-decoration:overline;">Poems</a><a href="/my_page/short_stories/stories.html">Short Stories</a><a href="/my_page/shoes/shoes.html">Shoes</a><a href="/my_page/ceramics/index.html">Ceramics</a></h3>
 <p>List of poems:</p>
 <a href="/bird_animation/index.html" target="targetframe">Beautiful Birds</a> <!-- The user will get trapped here until we make the styling similar. -->   
 <a>Bubbles</a> <!--This will provide a link to the bubbles page and graphic -->  
@@ -17,7 +19,7 @@
     
 <a>Jelly Man Kelly, Man</a>    
 <div>
-    <iframe src="" name="targetframe" allowTransparency="true" width="100%" height="1000px" frameborder="0"></iframe>
+    <iframe src="" name="targetframe" allowTransparency="true" width="85%" height="400px" frameborder="0" id="poemframe"></iframe>
 </div>    
 <!--This is meant to allow loading of another frame inside of this window -->    
 </body>
