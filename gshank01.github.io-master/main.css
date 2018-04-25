@@ -1,0 +1,199 @@
+@font-face{ 
+    font-family: 'alex-brush';
+    src: url('alex-brush/AlexBrush-Regular.ttf');
+    src: url('alex-brush/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face{ 
+    font-family: 'rubik-regular';
+    src: url('rubik/Rubik-Regular.ttf');
+    src: url('rubik/Rubik-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'rubik-regular', sans-serif;
+    /*	font-size: 25px;*/
+
+    /*    This is necessary to keep the images changing size*/
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.info {
+    font-family:'rubik-regular', sans-serif;
+    font-size: 30px;
+    text-align:left;
+    margin: 5%;
+}
+
+.res{
+    font-family:'rubik-regular', sans-serif;
+    text-align:left;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size:30px;
+}
+
+.title {
+    padding-top: 10px;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.important {
+    font-weight:bold;
+    padding:20px;
+    text-decoration:underline;
+}
+
+.page_link {
+    color: darkblue;
+}
+
+#my_name {
+    color: black;
+    font-size: 52px;
+    font-family: 'alex-brush', sans-serif;
+}
+
+#cv_title {
+    font-size: 52px;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'alex-brush', sans-serif;
+}
+
+img {
+    max-width: 100%; 
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#myface {
+    margin-top: 1%;
+    border-style:groove;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0; 
+
+    background: blue;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.orange {
+    background:orange;
+}
+
+.pink {
+    background:pink;
+}
+
+.green {
+    background: lightgreen;
+}
+
+.birthday {
+    max-width: 100%; 
+    height: 100vh;
+    
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    
+    
+/*
+    
+    animation-name: bb;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-fill-mode:backwards;
+}
+
+@keyframes bb{
+    0%{display:none};
+        100%{display:block};
+*/
+}
+
+iframe{
+    max-width: 50%;
+    text-align: center;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-family: 'rubik-regular', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.navigation a:hover {
+    background: darken(orange, 2%);
+}
+
+.navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+}
+
+
+.navigation li:last-of-type a {
+    border-bottom: none;
+}
+
+#cake{
+    display:none;    
+    
+    max-width: 100%; 
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn{
+    position:absolute;
+}
+
+
+#button2{
+    display:none;
+}
+
+.hbd{
+    text-align:center;
+    line-height: 2em;
+    padding: 10px;
+    border-style:groove;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Kostako </title>
+        <link rel="stylesheet" type="text/css" href="reset.css"> 
+        <link rel="stylesheet" type="text/css" href="main.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<img class="gum" src="kostas_green.png" alt="picture of KOSTAS in chewed gum">  
+    
+<ul class="navigation green">  <!-- Will be sticky -->
+  <li><a href="index.html">Home</a></li>
+  <li><a href="kostas.html">Kostas</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>    
+    
+    
+
+    
+    
+<div class="birthday">
+    <img src="hbd_bb.png">
+    <button class="btn" id="button2">Hide Cake</button> 
+    <button class="btn" id="button1">Show Cake</button> 
+    
+        <iframe id="cake" align="middle" width="640" height="480" src="https://poly.google.com/view/cjEmtfd5v5w/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+    </div>    
+    
+<script>
+$(document).ready(function() {
+	$(".btn").click(function() {
+		$("#cake").show();
+        $("#button2").show();
+        $("#button1").hide();
+	});
+});
+    
+$(document).ready(function() {
+	$("#button2").click(function() {
+		$("#cake").hide();
+        $("#button2").hide();
+        $("#button1").show();
+	});
+});    
+</script>
+
+</body>
